@@ -20,7 +20,7 @@
           <tr>
             <td colspan="3" style="text-align: left">
               <div style="padding-left: 15px; height: 40px; line-height: 40px">
-                我是网络小说写手，我要注册为小说精品屋签约作者：
+                我是网络小说写手，我要注册为一点一横长签约作者：
               </div>
             </td>
           </tr>
@@ -31,7 +31,7 @@
               <input
                 v-model="penName"
                 name="penName"
-                
+
                 type="text"
                 maxlength="8"
                 id="TxtNiceName"
@@ -52,7 +52,7 @@
               <input
               v-model="telPhone"
                 name="telPhone"
-                
+
                 type="text"
                 id="TxtMobile"
                 class="
@@ -66,7 +66,7 @@
             </td>
             <td>
               <span class="notes"> *</span>
-              小说精品屋的编辑会通过这个号码与您联系
+              一点一横长的编辑会通过这个号码与您联系
             </td>
           </tr>
           <tr>
@@ -75,7 +75,7 @@
               <input
               v-model="chatAccount"
                 name="chatAccount"
-                
+
                 type="text"
                 id="TxtQQ"
                 class="
@@ -88,7 +88,7 @@
             </td>
             <td>
               <span class="notes"> *</span>
-              小说精品屋的编辑会通过这个号码与您联系
+              一点一横长的编辑会通过这个号码与您联系
             </td>
           </tr>
           <tr>
@@ -97,7 +97,7 @@
               <input
               v-model="email"
                 name="email"
-                
+
                 type="text"
                 id="TxtEmail"
                 class="
@@ -219,7 +219,7 @@ export default {
         ElMessage.error("电子邮箱格式不正确！");
         return;
       }
-      
+
       const { data } = await register(state);
 
       router.push({ name: "authorBookList" });
